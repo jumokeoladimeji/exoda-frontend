@@ -141,6 +141,7 @@ export class HomePage extends Component {
                         <div className="col-6">
                             <p>USERS LIKE {user.full_name}</p>
                         </div>
+                         { !this.props.fetching && this.props.similarity_user_list.length === 0 && this.props.recurring_trend.length === 0 && <div>NO SIMILAR USER</div> }
                         { this.props.similarity_user_list.length > 0 && this.props.recurring_trend.length > 0 && this.displayUsersLike() }
         
                         </div>
@@ -181,7 +182,7 @@ export class HomePage extends Component {
     render() {
         const { fetching } = this.props;
 
-        if (fetching && this.props.similarity_user_list.length === 0 && this.props.recurring_trend.length === 0) return <Loader />;
+        if (fetching) return <Loader />;
         
         return (
             <div className="container dasboardDiv">
