@@ -1,6 +1,7 @@
 import userService from '../services/user';
 import { userConstant } from '../constants';
 import { alertErrorMessage } from './alert';
+import { getSimilarity } from './similarity'
 
 
 export function getUsersStart() {
@@ -46,6 +47,7 @@ export function getUsers() {
     dispatch(getUsersStart());
     return userService.list()
       .then((response) => {
+        dispatch(getSimilarity(response.data.data[0].id));
         dispatch(getUsersSuccess(response.data.data));
       })
       .catch(() => {
@@ -57,9 +59,6 @@ export function getUsers() {
 
 export function readUserData(user, props) {
   return dispatch => {
-        if (props) {
-           props.history.push('/');
-        }
         dispatch(readUserSuccess(user))
   };
 }

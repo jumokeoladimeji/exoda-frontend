@@ -1,4 +1,3 @@
-import { Dropdown } from "bootstrap"
 
 const navBarPanel = () => {
     return (

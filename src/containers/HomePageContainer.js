@@ -21,7 +21,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getUsers: () => { dispatch(getUsers())},
-   readUserData: (user, props) => { dispatch(readUserData(user, props))},
+    readUserData: (user, props) => { dispatch(readUserData(user, props))},
     getSimilarity: (userId) => { dispatch(getSimilarity(userId))} 
   }
 }

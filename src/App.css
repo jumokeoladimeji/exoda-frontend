@@ -47,12 +47,17 @@
 
 .userDiv {
   padding-top: 4em;
-  padding-left: 15em !important;
+  /* padding-left: 15em !important; */
   font-size: 14px;
+  max-width: 100% !important;
 }
 
 .userListDiv {
-  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.colorBlue {
+  background-color: lightsteelblue;
 }
 
 .moneyFont {
@@ -60,5 +65,18 @@
 }
 
 .test-style {
-      margin: 10px 5px;
+  margin: 10px 5px;
+}
+
+.category-img {
+  max-width: 20% !important;
+  margin-left: 1em
+}
+
+.similarity {
+  margin-top: 3em !important;
+}
+
+.display-like{
+  margin-bottom: 1em !important;
 }
