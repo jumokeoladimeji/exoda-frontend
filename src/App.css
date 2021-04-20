@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.userImage {
+  border-radius: 4.25rem !important
+}
+
+.dasboardDiv {
+  margin-left: 0.5em !important;
+}
+
+.userDiv {
+  padding-top: 4em;
+  /* padding-left: 15em !important; */
+  font-size: 14px;
+  max-width: 100% !important;
+}
+
+.userListDiv {
+  margin-top: 1em;
+}
+
+.colorBlue {
+  background-color: lightsteelblue;
+}
+
+.moneyFont {
+  color: #000C66;
+}
+
+.test-style {
+  margin: 10px 5px;
+}
+
+.category-img {
+  max-width: 20% !important;
+  margin-left: 1em
+}
+
+.similarity {
+  margin-top: 3em !important;
+}
+
+.display-like{
+  margin-bottom: 1em !important;
+}
